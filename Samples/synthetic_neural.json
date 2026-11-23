@@ -1,0 +1,16 @@
+{
+  "path": "Samples/synthetic_neural.bin",
+  "channels": 64,
+  "sample_rate": 10000,
+  "seconds": 2.0,
+  "dtype": "int16",
+  "layout": "frame-major interleaved channels",
+  "phrases": [
+    "Meeting at 4",
+    "Send the design notes",
+    "Call mom after lunch",
+    "Book a flight to Seattle",
+    "Remind me to stretch"
+  ],
+  "bytes": 2560000
+}

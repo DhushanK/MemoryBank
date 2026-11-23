@@ -1,0 +1,44 @@
+name: TelepathyEngine
+options:
+  bundleIdPrefix: com.memorybank
+  deploymentTarget:
+    macOS: "14.0"
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  BASE_SDK: auto
+  SWIFT_VERSION: "5.9"
+  TARGETED_DEVICE_FAMILY: "1,2"
+packages:
+  TelepathyEngineLibs:
+    path: .
+targets:
+  TelepathyEngine:
+    type: application
+    platform: [macOS, iOS]
+    sources:
+      - path: Apps/TelepathyEngine/Shared
+      - path: Samples/context
+        buildPhase: resources
+        type: folder
+    dependencies:
+      - package: TelepathyEngineLibs
+        product: NeuralCore
+      - package: TelepathyEngineLibs
+        product: SessionKit
+      - package: TelepathyEngineLibs
+        product: MemoryBankKit
+      - package: TelepathyEngineLibs
+        product: LLMBridge
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.memorybank.TelepathyEngine
+      GENERATE_INFOPLIST_FILE: YES
+      INFOPLIST_KEY_CFBundleDisplayName: Telepathy Engine
+      INFOPLIST_KEY_UILaunchScreen_Generation: YES
+      INFOPLIST_KEY_NSLocalNetworkUsageDescription: Receive simulated neural UDP streams on the local network.
+      INFOPLIST_KEY_NSBonjourServices: "(_telepathy._udp)"
+      MACOSX_DEPLOYMENT_TARGET: "14.0"
+      IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+      CODE_SIGN_ENTITLEMENTS: Apps/TelepathyEngine/TelepathyEngine.entitlements
+    entitlements:
+      path: Apps/TelepathyEngine/TelepathyEngine.entitlements

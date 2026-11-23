@@ -1,0 +1,32 @@
+# Xcode / SPM
+.build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+xcuserdata/
+.swiftpm/
+
+# Models & sessions
+*.gguf
+*.telepathy
+Models/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.Python
+
+# Dataset blobs (keep generated synthetic for demos if present)
+Samples/*.mat
+Samples/kunz_*.bin
+!Samples/synthetic_neural.bin
+!Samples/synthetic_neural.json
+!Samples/context/
+
+# macOS
+.DS_Store
+
+# Secrets / env
+.env
+*.pem

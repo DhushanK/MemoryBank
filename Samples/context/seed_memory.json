@@ -1,0 +1,37 @@
+[
+  {
+    "id": "11111111-1111-1111-1111-111111111111",
+    "source": "Calendar",
+    "title": "Meeting at 4",
+    "body": "Design Review at 4:00 PM with the Neuralink BCI Applications team.",
+    "weight": 1.0
+  },
+  {
+    "id": "22222222-2222-2222-2222-222222222222",
+    "source": "Notes",
+    "title": "Send the design notes",
+    "body": "Remember to send the design notes from yesterday's architecture review.",
+    "weight": 1.0
+  },
+  {
+    "id": "33333333-3333-3333-3333-333333333333",
+    "source": "Reminders",
+    "title": "Call mom after lunch",
+    "body": "Personal reminder: call mom after lunch today.",
+    "weight": 1.0
+  },
+  {
+    "id": "44444444-4444-4444-4444-444444444444",
+    "source": "Travel",
+    "title": "Book a flight to Seattle",
+    "body": "Trip planning: book a flight to Seattle for the onsite week.",
+    "weight": 1.0
+  },
+  {
+    "id": "55555555-5555-5555-5555-555555555555",
+    "source": "Health",
+    "title": "Remind me to stretch",
+    "body": "Every two hours, stretch shoulders and wrists during coding sessions.",
+    "weight": 1.0
+  }
+]

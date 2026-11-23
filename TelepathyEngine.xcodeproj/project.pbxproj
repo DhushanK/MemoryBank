@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		222347A9E0584985BA28435C /* ContentView.swift */ = {isa = PBXBuildFile; fileRef = 03A17D6A3DAF4CF19675059C /* ContentView.swift */; };
+		BED3E89325AF4981B0C2912F /* ContextReminderView.swift */ = {isa = PBXBuildFile; fileRef = 8ED66472F6814069A479A2F9 /* ContextReminderView.swift */; };
+		26B10F48FFD4431BBE942BEC /* EngineViewModel.swift */ = {isa = PBXBuildFile; fileRef = 39299001CAEA4C7E9C5AA503 /* EngineViewModel.swift */; };
+		4A59B595878549F1A132AEFA /* MetalSpikeView.swift */ = {isa = PBXBuildFile; fileRef = 808CCD5771B44D14A4EFF864 /* MetalSpikeView.swift */; };
+		8F2800014AA74C989C17CBB7 /* TelepathyEngineApp.swift */ = {isa = PBXBuildFile; fileRef = 4DDE8F2F55594AF5883BC899 /* TelepathyEngineApp.swift */; };
+		19D2D327308B4981B33CFFFA /* TimeseriesPlotView.swift */ = {isa = PBXBuildFile; fileRef = FF6289D79BEE4BA2BA40595A /* TimeseriesPlotView.swift */; };
+		968D0E2800C54E0A85C9804B /* seed_memory.json */ = {isa = PBXBuildFile; fileRef = CC61D4E84BF24870B03BF192 /* seed_memory.json */; };
+		FCFB04B155B745498ED169E9 /* synthetic_neural.bin */ = {isa = PBXBuildFile; fileRef = 56D32A3843AE4DE7827E5A0D /* synthetic_neural.bin */; };
+		24155F631C1A4A0B81B61C3A /* NeuralCore */ = {isa = PBXBuildFile; productRef = 299FB007C7AA4F77A98F3BAD /* NeuralCore */; };
+		E1684C2987B041ABA2E8F9C4 /* SessionKit */ = {isa = PBXBuildFile; productRef = AA5EEE9CAD534FEF9F146A60 /* SessionKit */; };
+		AC25ED2819454E0B97EDE828 /* MemoryBankKit */ = {isa = PBXBuildFile; productRef = 138CCF3709F94F12ACF4969D /* MemoryBankKit */; };
+		16455AA4F8214C008834B3DC /* LLMBridge */ = {isa = PBXBuildFile; productRef = EB223BC57B2C49C99B4CFACF /* LLMBridge */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03A17D6A3DAF4CF19675059C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8ED66472F6814069A479A2F9 /* ContextReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContextReminderView.swift; path = ContextReminderView.swift; sourceTree = "<group>"; };
+		39299001CAEA4C7E9C5AA503 /* EngineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EngineViewModel.swift; path = EngineViewModel.swift; sourceTree = "<group>"; };
+		808CCD5771B44D14A4EFF864 /* MetalSpikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MetalSpikeView.swift; path = MetalSpikeView.swift; sourceTree = "<group>"; };
+		4DDE8F2F55594AF5883BC899 /* TelepathyEngineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TelepathyEngineApp.swift; path = TelepathyEngineApp.swift; sourceTree = "<group>"; };
+		FF6289D79BEE4BA2BA40595A /* TimeseriesPlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeseriesPlotView.swift; path = TimeseriesPlotView.swift; sourceTree = "<group>"; };
+		CC61D4E84BF24870B03BF192 /* seed_memory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = seed_memory.json; path = ../../../Samples/context/seed_memory.json; sourceTree = "<group>"; };
+		56D32A3843AE4DE7827E5A0D /* synthetic_neural.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = synthetic_neural.bin; path = ../Resources/synthetic_neural.bin; sourceTree = "<group>"; };
+		2AC8CDA3B8624D7DBBDF6E65 /* TelepathyEngine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ../TelepathyEngine.entitlements; sourceTree = "<group>"; };
+		DCEC0BA4FF3647829B8F051F /* TelepathyEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelepathyEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89AFA3544DD24953956F7DFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24155F631C1A4A0B81B61C3A /* NeuralCore */,
+				E1684C2987B041ABA2E8F9C4 /* SessionKit */,
+				AC25ED2819454E0B97EDE828 /* MemoryBankKit */,
+				16455AA4F8214C008834B3DC /* LLMBridge */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11B6793A55A04DABB32DF975 = {
+			isa = PBXGroup;
+			children = (
+				19BE969C7C524906AD8CF206 /* TelepathyEngine */,
+				7684E3C4D33F498EB80C6056 /* Packages */,
+				7F655CAAFDC2427FA1EDC6AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F655CAAFDC2427FA1EDC6AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCEC0BA4FF3647829B8F051F /* TelepathyEngine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19BE969C7C524906AD8CF206 /* TelepathyEngine */ = {
+			isa = PBXGroup;
+			children = (
+				03A17D6A3DAF4CF19675059C /* ContentView.swift */,
+				8ED66472F6814069A479A2F9 /* ContextReminderView.swift */,
+				39299001CAEA4C7E9C5AA503 /* EngineViewModel.swift */,
+				808CCD5771B44D14A4EFF864 /* MetalSpikeView.swift */,
+				4DDE8F2F55594AF5883BC899 /* TelepathyEngineApp.swift */,
+				FF6289D79BEE4BA2BA40595A /* TimeseriesPlotView.swift */,
+				CC61D4E84BF24870B03BF192 /* seed_memory.json */,
+				56D32A3843AE4DE7827E5A0D /* synthetic_neural.bin */,
+				2AC8CDA3B8624D7DBBDF6E65 /* TelepathyEngine.entitlements */,
+			);
+			path = Apps/TelepathyEngine/Shared;
+			name = TelepathyEngine;
+			sourceTree = "<group>";
+		};
+		7684E3C4D33F498EB80C6056 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78B00E2E6CE3477FA78B656C /* TelepathyEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8BACB22870B4F6B9A5EDBF3 /* Build configuration list for PBXNativeTarget "TelepathyEngine" */;
+			buildPhases = (
+				8F37BD6B830F452A96BA0272 /* Sources */,
+				89AFA3544DD24953956F7DFE /* Frameworks */,
+				5542F3D8F3EE44918EDDC9FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelepathyEngine;
+			packageProductDependencies = (
+				299FB007C7AA4F77A98F3BAD /* NeuralCore */,
+				AA5EEE9CAD534FEF9F146A60 /* SessionKit */,
+				138CCF3709F94F12ACF4969D /* MemoryBankKit */,
+				EB223BC57B2C49C99B4CFACF /* LLMBridge */,
+			);
+			productName = TelepathyEngine;
+			productReference = DCEC0BA4FF3647829B8F051F /* TelepathyEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B1C84C4EC024D51A9833FC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = DFF9142782EC4671A16AF607 /* Build configuration list for PBXProject "TelepathyEngine" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11B6793A55A04DABB32DF975;
+			packageReferences = (
+				B51F80E9F19241E4B86C713A /* XCLocalSwiftPackageReference */,
+			);
+			productRefGroup = 7F655CAAFDC2427FA1EDC6AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78B00E2E6CE3477FA78B656C /* TelepathyEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5542F3D8F3EE44918EDDC9FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968D0E2800C54E0A85C9804B /* seed_memory.json */,
+				FCFB04B155B745498ED169E9 /* synthetic_neural.bin */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F37BD6B830F452A96BA0272 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222347A9E0584985BA28435C /* ContentView.swift */,
+				BED3E89325AF4981B0C2912F /* ContextReminderView.swift */,
+				26B10F48FFD4431BBE942BEC /* EngineViewModel.swift */,
+				4A59B595878549F1A132AEFA /* MetalSpikeView.swift */,
+				8F2800014AA74C989C17CBB7 /* TelepathyEngineApp.swift */,
+				19D2D327308B4981B33CFFFA /* TimeseriesPlotView.swift */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E0C96CB385C04D6DA4ED5341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB1DC2AFCD8747A2990E411B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1F5C1116D07E44F8A0729757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Apps/TelepathyEngine/TelepathyEngine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Telepathy Engine";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Receive simulated neural UDP streams.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.memorybank.TelepathyEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B092D49AD2D84E92BE1CACD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Apps/TelepathyEngine/TelepathyEngine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Telepathy Engine";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Receive simulated neural UDP streams.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.memorybank.TelepathyEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFF9142782EC4671A16AF607 /* Build configuration list for PBXProject "TelepathyEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0C96CB385C04D6DA4ED5341 /* Debug */,
+				AB1DC2AFCD8747A2990E411B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8BACB22870B4F6B9A5EDBF3 /* Build configuration list for PBXNativeTarget "TelepathyEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5C1116D07E44F8A0729757 /* Debug */,
+				B092D49AD2D84E92BE1CACD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B51F80E9F19241E4B86C713A /* XCLocalSwiftPackageReference */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+
+		299FB007C7AA4F77A98F3BAD /* NeuralCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51F80E9F19241E4B86C713A /* TelepathyEngineLibs */;
+			productName = NeuralCore;
+		};
+		AA5EEE9CAD534FEF9F146A60 /* SessionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51F80E9F19241E4B86C713A /* TelepathyEngineLibs */;
+			productName = SessionKit;
+		};
+		138CCF3709F94F12ACF4969D /* MemoryBankKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51F80E9F19241E4B86C713A /* TelepathyEngineLibs */;
+			productName = MemoryBankKit;
+		};
+		EB223BC57B2C49C99B4CFACF /* LLMBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51F80E9F19241E4B86C713A /* TelepathyEngineLibs */;
+			productName = LLMBridge;
+		};
+
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6B1C84C4EC024D51A9833FC2 /* Project object */;
+}
